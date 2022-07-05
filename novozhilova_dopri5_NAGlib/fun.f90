@@ -3,10 +3,11 @@ module fun
     use ifcore
 
     integer(c_int) ne, nt, nz, freq_out, neqp, lenwrk, l, method, ifail, neqf, lwork, liwork, nrd
- real(c_double) zex, dz, tend, dtr(2), q(3), i(2), th(2), a(2), dcir(2), r(2), f0(3), dt, pitch, f10, f20, f30, ptol, hstart, zstart
+    real(c_double) zex, dz, tend, dtr(2), q(3), i(2), th(2), a(2), dcir(2), r(2), f0(3), dt, &
+        pitch, f10, f20, f30, ptol, hstart, zstart
     complex(c_double_complex) fp(2)
     logical(c_bool) errass
-
+    
     integer(c_int) breaknum(3)
     real(c_double) phitmp0(3), phitmp1(3)
     complex(c_double_complex) fc, fcarr(3)
