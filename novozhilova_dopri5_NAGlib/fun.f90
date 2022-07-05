@@ -330,13 +330,13 @@ contains
         s(5) = -f3 + a1*f1*cos(phi1 - phi3) + a2*f2*cos(phi2 - phi3)
         s(6) = a1*f1/f3*sin(phi1 - phi3) + a2*f2/f3*sin(phi2 - phi3)
 
-        if (mod(iter_num, 4) .eq. 0) then
-            w1(1, time_num) = s(2)
-            w1(2, time_num) = s(4)
-            w1(3, time_num) = s(6)
-            time_num = time_num + 1
-        end if
-        iter_num = iter_num + 1
+        !if (mod(iter_num, 4) .eq. 0) then
+        !    w1(1, time_num) = s(2)
+        !    w1(2, time_num) = s(4)
+        !    w1(3, time_num) = s(6)
+        !    time_num = time_num + 1
+        !end if
+        !iter_num = iter_num + 1
     end subroutine dfdt
 
     subroutine calc_u(u, zex, nz, zax)
